@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A71A901F2658335500D6BCF0 /* YOKETestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A901E2658335500D6BCF0 /* YOKETestApp.swift */; };
+		A71A90212658335500D6BCF0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A90202658335500D6BCF0 /* ContentView.swift */; };
+		A71A90232658335900D6BCF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A71A90222658335900D6BCF0 /* Assets.xcassets */; };
+		A71A90262658335900D6BCF0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A71A90252658335900D6BCF0 /* Preview Assets.xcassets */; };
+		A71A90312658335900D6BCF0 /* YOKETestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A90302658335900D6BCF0 /* YOKETestTests.swift */; };
+		A71A903C2658335A00D6BCF0 /* YOKETestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A903B2658335A00D6BCF0 /* YOKETestUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A71A902D2658335900D6BCF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A71A90132658335500D6BCF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A71A901A2658335500D6BCF0;
+			remoteInfo = YOKETest;
+		};
+		A71A90382658335A00D6BCF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A71A90132658335500D6BCF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A71A901A2658335500D6BCF0;
+			remoteInfo = YOKETest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A71A901B2658335500D6BCF0 /* YOKETest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YOKETest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A71A901E2658335500D6BCF0 /* YOKETestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YOKETestApp.swift; sourceTree = "<group>"; };
+		A71A90202658335500D6BCF0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A71A90222658335900D6BCF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A71A90252658335900D6BCF0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A71A90272658335900D6BCF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A71A902C2658335900D6BCF0 /* YOKETestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YOKETestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A71A90302658335900D6BCF0 /* YOKETestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YOKETestTests.swift; sourceTree = "<group>"; };
+		A71A90322658335900D6BCF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A71A90372658335A00D6BCF0 /* YOKETestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YOKETestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A71A903B2658335A00D6BCF0 /* YOKETestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YOKETestUITests.swift; sourceTree = "<group>"; };
+		A71A903D2658335A00D6BCF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A71A90182658335500D6BCF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A71A90292658335900D6BCF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A71A90342658335A00D6BCF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A71A90122658335500D6BCF0 = {
+			isa = PBXGroup;
+			children = (
+				A71A901D2658335500D6BCF0 /* YOKETest */,
+				A71A902F2658335900D6BCF0 /* YOKETestTests */,
+				A71A903A2658335A00D6BCF0 /* YOKETestUITests */,
+				A71A901C2658335500D6BCF0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A71A901C2658335500D6BCF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A71A901B2658335500D6BCF0 /* YOKETest.app */,
+				A71A902C2658335900D6BCF0 /* YOKETestTests.xctest */,
+				A71A90372658335A00D6BCF0 /* YOKETestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A71A901D2658335500D6BCF0 /* YOKETest */ = {
+			isa = PBXGroup;
+			children = (
+				A71A901E2658335500D6BCF0 /* YOKETestApp.swift */,
+				A71A904E2658342F00D6BCF0 /* Model */,
+				A71A904D2658340200D6BCF0 /* APIService */,
+				A71A904C265833E500D6BCF0 /* Scence */,
+				A71A90202658335500D6BCF0 /* ContentView.swift */,
+				A71A90222658335900D6BCF0 /* Assets.xcassets */,
+				A71A90272658335900D6BCF0 /* Info.plist */,
+				A71A90242658335900D6BCF0 /* Preview Content */,
+			);
+			path = YOKETest;
+			sourceTree = "<group>";
+		};
+		A71A90242658335900D6BCF0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A71A90252658335900D6BCF0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A71A902F2658335900D6BCF0 /* YOKETestTests */ = {
+			isa = PBXGroup;
+			children = (
+				A71A90302658335900D6BCF0 /* YOKETestTests.swift */,
+				A71A90322658335900D6BCF0 /* Info.plist */,
+			);
+			path = YOKETestTests;
+			sourceTree = "<group>";
+		};
+		A71A903A2658335A00D6BCF0 /* YOKETestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A71A903B2658335A00D6BCF0 /* YOKETestUITests.swift */,
+				A71A903D2658335A00D6BCF0 /* Info.plist */,
+			);
+			path = YOKETestUITests;
+			sourceTree = "<group>";
+		};
+		A71A904C265833E500D6BCF0 /* Scence */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scence;
+			sourceTree = "<group>";
+		};
+		A71A904D2658340200D6BCF0 /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		A71A904E2658342F00D6BCF0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A71A901A2658335500D6BCF0 /* YOKETest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A71A90402658335A00D6BCF0 /* Build configuration list for PBXNativeTarget "YOKETest" */;
+			buildPhases = (
+				A71A90172658335500D6BCF0 /* Sources */,
+				A71A90182658335500D6BCF0 /* Frameworks */,
+				A71A90192658335500D6BCF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YOKETest;
+			productName = YOKETest;
+			productReference = A71A901B2658335500D6BCF0 /* YOKETest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A71A902B2658335900D6BCF0 /* YOKETestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A71A90432658335A00D6BCF0 /* Build configuration list for PBXNativeTarget "YOKETestTests" */;
+			buildPhases = (
+				A71A90282658335900D6BCF0 /* Sources */,
+				A71A90292658335900D6BCF0 /* Frameworks */,
+				A71A902A2658335900D6BCF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A71A902E2658335900D6BCF0 /* PBXTargetDependency */,
+			);
+			name = YOKETestTests;
+			productName = YOKETestTests;
+			productReference = A71A902C2658335900D6BCF0 /* YOKETestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A71A90362658335A00D6BCF0 /* YOKETestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A71A90462658335A00D6BCF0 /* Build configuration list for PBXNativeTarget "YOKETestUITests" */;
+			buildPhases = (
+				A71A90332658335A00D6BCF0 /* Sources */,
+				A71A90342658335A00D6BCF0 /* Frameworks */,
+				A71A90352658335A00D6BCF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A71A90392658335A00D6BCF0 /* PBXTargetDependency */,
+			);
+			name = YOKETestUITests;
+			productName = YOKETestUITests;
+			productReference = A71A90372658335A00D6BCF0 /* YOKETestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A71A90132658335500D6BCF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					A71A901A2658335500D6BCF0 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					A71A902B2658335900D6BCF0 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = A71A901A2658335500D6BCF0;
+					};
+					A71A90362658335A00D6BCF0 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = A71A901A2658335500D6BCF0;
+					};
+				};
+			};
+			buildConfigurationList = A71A90162658335500D6BCF0 /* Build configuration list for PBXProject "YOKETest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A71A90122658335500D6BCF0;
+			productRefGroup = A71A901C2658335500D6BCF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A71A901A2658335500D6BCF0 /* YOKETest */,
+				A71A902B2658335900D6BCF0 /* YOKETestTests */,
+				A71A90362658335A00D6BCF0 /* YOKETestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A71A90192658335500D6BCF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A71A90262658335900D6BCF0 /* Preview Assets.xcassets in Resources */,
+				A71A90232658335900D6BCF0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A71A902A2658335900D6BCF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A71A90352658335A00D6BCF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A71A90172658335500D6BCF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A71A90212658335500D6BCF0 /* ContentView.swift in Sources */,
+				A71A901F2658335500D6BCF0 /* YOKETestApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A71A90282658335900D6BCF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A71A90312658335900D6BCF0 /* YOKETestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A71A90332658335A00D6BCF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A71A903C2658335A00D6BCF0 /* YOKETestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A71A902E2658335900D6BCF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A71A901A2658335500D6BCF0 /* YOKETest */;
+			targetProxy = A71A902D2658335900D6BCF0 /* PBXContainerItemProxy */;
+		};
+		A71A90392658335A00D6BCF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A71A901A2658335500D6BCF0 /* YOKETest */;
+			targetProxy = A71A90382658335A00D6BCF0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A71A903E2658335A00D6BCF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A71A903F2658335A00D6BCF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A71A90412658335A00D6BCF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"YOKETest/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = YOKETest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tantt.unittest.YOKETest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A71A90422658335A00D6BCF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"YOKETest/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = YOKETest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tantt.unittest.YOKETest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A71A90442658335A00D6BCF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YOKETestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tantt.unittest.YOKETestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YOKETest.app/YOKETest";
+			};
+			name = Debug;
+		};
+		A71A90452658335A00D6BCF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YOKETestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tantt.unittest.YOKETestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YOKETest.app/YOKETest";
+			};
+			name = Release;
+		};
+		A71A90472658335A00D6BCF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YOKETestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tantt.unittest.YOKETestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YOKETest;
+			};
+			name = Debug;
+		};
+		A71A90482658335A00D6BCF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YOKETestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tantt.unittest.YOKETestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YOKETest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A71A90162658335500D6BCF0 /* Build configuration list for PBXProject "YOKETest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A71A903E2658335A00D6BCF0 /* Debug */,
+				A71A903F2658335A00D6BCF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A71A90402658335A00D6BCF0 /* Build configuration list for PBXNativeTarget "YOKETest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A71A90412658335A00D6BCF0 /* Debug */,
+				A71A90422658335A00D6BCF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A71A90432658335A00D6BCF0 /* Build configuration list for PBXNativeTarget "YOKETestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A71A90442658335A00D6BCF0 /* Debug */,
+				A71A90452658335A00D6BCF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A71A90462658335A00D6BCF0 /* Build configuration list for PBXNativeTarget "YOKETestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A71A90472658335A00D6BCF0 /* Debug */,
+				A71A90482658335A00D6BCF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A71A90132658335500D6BCF0 /* Project object */;
+}

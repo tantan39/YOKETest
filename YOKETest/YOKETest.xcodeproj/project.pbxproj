@@ -13,6 +13,8 @@
 		A71A90262658335900D6BCF0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A71A90252658335900D6BCF0 /* Preview Assets.xcassets */; };
 		A71A90312658335900D6BCF0 /* YOKETestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A90302658335900D6BCF0 /* YOKETestTests.swift */; };
 		A71A903C2658335A00D6BCF0 /* YOKETestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A903B2658335A00D6BCF0 /* YOKETestUITests.swift */; };
+		A71A9050265836DD00D6BCF0 /* ItunesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A904F265836DD00D6BCF0 /* ItunesService.swift */; };
+		A71A905D26583F2600D6BCF0 /* AlbumListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A905C26583F2600D6BCF0 /* AlbumListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		A71A90372658335A00D6BCF0 /* YOKETestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YOKETestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A71A903B2658335A00D6BCF0 /* YOKETestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YOKETestUITests.swift; sourceTree = "<group>"; };
 		A71A903D2658335A00D6BCF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A71A904F265836DD00D6BCF0 /* ItunesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesService.swift; sourceTree = "<group>"; };
+		A71A905C26583F2600D6BCF0 /* AlbumListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				A71A901E2658335500D6BCF0 /* YOKETestApp.swift */,
+				A71A9057265837B400D6BCF0 /* Constant */,
 				A71A904E2658342F00D6BCF0 /* Model */,
 				A71A904D2658340200D6BCF0 /* APIService */,
 				A71A904C265833E500D6BCF0 /* Scence */,
@@ -136,6 +141,7 @@
 		A71A904C265833E500D6BCF0 /* Scence */ = {
 			isa = PBXGroup;
 			children = (
+				A71A905B26583B7B00D6BCF0 /* AlbumListView */,
 			);
 			path = Scence;
 			sourceTree = "<group>";
@@ -143,6 +149,7 @@
 		A71A904D2658340200D6BCF0 /* APIService */ = {
 			isa = PBXGroup;
 			children = (
+				A71A904F265836DD00D6BCF0 /* ItunesService.swift */,
 			);
 			path = APIService;
 			sourceTree = "<group>";
@@ -152,6 +159,21 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A71A9057265837B400D6BCF0 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		A71A905B26583B7B00D6BCF0 /* AlbumListView */ = {
+			isa = PBXGroup;
+			children = (
+				A71A905C26583F2600D6BCF0 /* AlbumListViewModel.swift */,
+			);
+			path = AlbumListView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,7 +305,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A71A905D26583F2600D6BCF0 /* AlbumListViewModel.swift in Sources */,
 				A71A90212658335500D6BCF0 /* ContentView.swift in Sources */,
+				A71A9050265836DD00D6BCF0 /* ItunesService.swift in Sources */,
 				A71A901F2658335500D6BCF0 /* YOKETestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

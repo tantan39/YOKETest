@@ -28,16 +28,41 @@ struct ITunesService: APIService {
         
         return URLSession.shared
             .dataTaskPublisher(for: url)
-            .map { $0.data }
-            .decode(type: [Album].self, decoder: JSONDecoder())
+            .map { response in
+                return response.data }
+            .decode(type: Feed.self, decoder: JSONDecoder())
+            .map({ $0.response })
+            .map({ $0.results })
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
         
     }
 }
 
-struct Album: Codable {
+struct Feed: Codable {
+    let response : ItunesResponse
+    enum CodingKeys: String, CodingKey {
+        case response = "feed"
+    }
+    
+    struct ItunesResponse: Codable {
+        let results: [Album]
+        
+        enum CodingKeys: String, CodingKey {
+            case results = "results"
+        }
+        
+    //    init(from decoder: Decoder) throws {
+    //        let container = try decoder.container(keyedBy: CodingKeys.self)
+    //        results = try container.decode([Album].self, forKey: .results)
+    //    }
+    }
+}
+
+struct Album: Codable, Identifiable {
     let artistName: String
     let name: String
     let artworkUrl100: String
+    let id: String
+    
 }

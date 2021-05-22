@@ -11,7 +11,7 @@ import SwiftUI
 struct YOKETestApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AlbumListView()
         }
     }
 }

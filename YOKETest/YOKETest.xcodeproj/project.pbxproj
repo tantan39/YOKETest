@@ -15,6 +15,9 @@
 		A71A903C2658335A00D6BCF0 /* YOKETestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A903B2658335A00D6BCF0 /* YOKETestUITests.swift */; };
 		A71A9050265836DD00D6BCF0 /* ItunesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A904F265836DD00D6BCF0 /* ItunesService.swift */; };
 		A71A905D26583F2600D6BCF0 /* AlbumListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A905C26583F2600D6BCF0 /* AlbumListViewModel.swift */; };
+		A71A90622658422600D6BCF0 /* AlbumListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A90612658422600D6BCF0 /* AlbumListView.swift */; };
+		A71A9067265858E700D6BCF0 /* AlbumCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A9066265858E700D6BCF0 /* AlbumCellView.swift */; };
+		A71A906D265890EA00D6BCF0 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A906C265890E900D6BCF0 /* RemoteImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		A71A903D2658335A00D6BCF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A71A904F265836DD00D6BCF0 /* ItunesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesService.swift; sourceTree = "<group>"; };
 		A71A905C26583F2600D6BCF0 /* AlbumListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListViewModel.swift; sourceTree = "<group>"; };
+		A71A90612658422600D6BCF0 /* AlbumListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListView.swift; sourceTree = "<group>"; };
+		A71A9066265858E700D6BCF0 /* AlbumCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCellView.swift; sourceTree = "<group>"; };
+		A71A906C265890E900D6BCF0 /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				A71A901E2658335500D6BCF0 /* YOKETestApp.swift */,
+				A71A906B265890A400D6BCF0 /* Customize */,
 				A71A9057265837B400D6BCF0 /* Constant */,
 				A71A904E2658342F00D6BCF0 /* Model */,
 				A71A904D2658340200D6BCF0 /* APIService */,
@@ -172,8 +179,18 @@
 			isa = PBXGroup;
 			children = (
 				A71A905C26583F2600D6BCF0 /* AlbumListViewModel.swift */,
+				A71A90612658422600D6BCF0 /* AlbumListView.swift */,
+				A71A9066265858E700D6BCF0 /* AlbumCellView.swift */,
 			);
 			path = AlbumListView;
+			sourceTree = "<group>";
+		};
+		A71A906B265890A400D6BCF0 /* Customize */ = {
+			isa = PBXGroup;
+			children = (
+				A71A906C265890E900D6BCF0 /* RemoteImageView.swift */,
+			);
+			path = Customize;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,8 +324,11 @@
 			files = (
 				A71A905D26583F2600D6BCF0 /* AlbumListViewModel.swift in Sources */,
 				A71A90212658335500D6BCF0 /* ContentView.swift in Sources */,
+				A71A9067265858E700D6BCF0 /* AlbumCellView.swift in Sources */,
 				A71A9050265836DD00D6BCF0 /* ItunesService.swift in Sources */,
 				A71A901F2658335500D6BCF0 /* YOKETestApp.swift in Sources */,
+				A71A90622658422600D6BCF0 /* AlbumListView.swift in Sources */,
+				A71A906D265890EA00D6BCF0 /* RemoteImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

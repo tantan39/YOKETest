@@ -72,6 +72,7 @@ public struct Album: Codable, Identifiable {
     public let genres: [Genre]
     let releaseDate: String
     let copyright: String
+    let url: String
 }
 
 public struct Genre: Codable {

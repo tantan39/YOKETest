@@ -61,9 +61,12 @@ struct AlbumDetailView: View {
                     
                 
                 VStack {
-                    Button(action: {}, label: {
-                        
-                        
+                    Button(action: {
+                        if let url = URL(string: album.url) {
+                               UIApplication.shared.open(url)
+                           }
+                    }, label: {
+
                         Text(TextManager.itunesStore)
                             .frame(maxWidth: .infinity , maxHeight: 60)
                             .foregroundColor(.white)
@@ -85,7 +88,7 @@ struct AlbumDetailView: View {
 
 struct AlbumDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        let album = Album(id: "", artistName: "", name: "", artworkUrl100: "https://is3-ssl.mzstatic.com/image/thumb/Music114/v4/64/82/1d/64821d19-14b2-7f58-8106-bccb4d04ada3/075679786210.jpg/200x200bb.png", genres: [], releaseDate: "", copyright: "")
+        let album = Album(id: "", artistName: "", name: "", artworkUrl100: "https://is3-ssl.mzstatic.com/image/thumb/Music114/v4/64/82/1d/64821d19-14b2-7f58-8106-bccb4d04ada3/075679786210.jpg/200x200bb.png", genres: [], releaseDate: "", copyright: "", url: "")
         AlbumDetailView(album: album)
     }
 }

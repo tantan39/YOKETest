@@ -18,6 +18,10 @@
 		A71A90622658422600D6BCF0 /* AlbumListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A90612658422600D6BCF0 /* AlbumListView.swift */; };
 		A71A9067265858E700D6BCF0 /* AlbumCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A9066265858E700D6BCF0 /* AlbumCellView.swift */; };
 		A71A906D265890EA00D6BCF0 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A906C265890E900D6BCF0 /* RemoteImageView.swift */; };
+		A7ADB2A0265ABF52004966FD /* AlbumListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ADB29F265ABF52004966FD /* AlbumListViewModelTests.swift */; };
+		A7ADB2A5265AC684004966FD /* RSSSample.json in Resources */ = {isa = PBXBuildFile; fileRef = A7ADB2A4265AC684004966FD /* RSSSample.json */; };
+		A7ADB2B1265ACD5D004966FD /* AlbumDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ADB2B0265ACD5D004966FD /* AlbumDetailView.swift */; };
+		A7ADB2B7265AE33A004966FD /* TextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ADB2B6265AE33A004966FD /* TextManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		A71A90612658422600D6BCF0 /* AlbumListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListView.swift; sourceTree = "<group>"; };
 		A71A9066265858E700D6BCF0 /* AlbumCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCellView.swift; sourceTree = "<group>"; };
 		A71A906C265890E900D6BCF0 /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
+		A7ADB29F265ABF52004966FD /* AlbumListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListViewModelTests.swift; sourceTree = "<group>"; };
+		A7ADB2A4265AC684004966FD /* RSSSample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RSSSample.json; sourceTree = "<group>"; };
+		A7ADB2B0265ACD5D004966FD /* AlbumDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailView.swift; sourceTree = "<group>"; };
+		A7ADB2B6265AE33A004966FD /* TextManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				A71A90302658335900D6BCF0 /* YOKETestTests.swift */,
+				A7ADB29F265ABF52004966FD /* AlbumListViewModelTests.swift */,
+				A7ADB2A4265AC684004966FD /* RSSSample.json */,
 				A71A90322658335900D6BCF0 /* Info.plist */,
 			);
 			path = YOKETestTests;
@@ -148,6 +158,7 @@
 		A71A904C265833E500D6BCF0 /* Scence */ = {
 			isa = PBXGroup;
 			children = (
+				A7ADB2AF265ACD3F004966FD /* AlbumDetailView */,
 				A71A905B26583B7B00D6BCF0 /* AlbumListView */,
 			);
 			path = Scence;
@@ -171,6 +182,7 @@
 		A71A9057265837B400D6BCF0 /* Constant */ = {
 			isa = PBXGroup;
 			children = (
+				A7ADB2B6265AE33A004966FD /* TextManager.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -191,6 +203,14 @@
 				A71A906C265890E900D6BCF0 /* RemoteImageView.swift */,
 			);
 			path = Customize;
+			sourceTree = "<group>";
+		};
+		A7ADB2AF265ACD3F004966FD /* AlbumDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				A7ADB2B0265ACD5D004966FD /* AlbumDetailView.swift */,
+			);
+			path = AlbumDetailView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7ADB2A5265AC684004966FD /* RSSSample.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +350,8 @@
 				A71A901F2658335500D6BCF0 /* YOKETestApp.swift in Sources */,
 				A71A90622658422600D6BCF0 /* AlbumListView.swift in Sources */,
 				A71A906D265890EA00D6BCF0 /* RemoteImageView.swift in Sources */,
+				A7ADB2B1265ACD5D004966FD /* AlbumDetailView.swift in Sources */,
+				A7ADB2B7265AE33A004966FD /* TextManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7ADB2A0265ABF52004966FD /* AlbumListViewModelTests.swift in Sources */,
 				A71A90312658335900D6BCF0 /* YOKETestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -577,6 +601,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tantt.unittest.YOKETestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = YOKETest;
@@ -596,6 +621,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tantt.unittest.YOKETestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = YOKETest;

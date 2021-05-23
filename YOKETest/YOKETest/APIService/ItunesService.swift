@@ -8,20 +8,24 @@
 import Foundation
 import Combine
 
-struct Constant {
-    static let baseURL = "https://rss.itunes.apple.com/api/"
+public struct Constant {
+    public static let baseURL = "https://rss.itunes.apple.com/api/"
 }
 
-enum APIPath: String {
+public enum APIPath: String {
     case feedComingSoon = "v1/us/apple-music/coming-soon/all/100/explicit.json"
 }
 
-protocol APIService {
+public protocol APIService {
     func loadAlbums() -> AnyPublisher<[Album], Error>
 }
 
-struct ITunesService: APIService {
-    func loadAlbums() -> AnyPublisher<[Album], Error> {
+public struct ITunesService: APIService {
+    public init () {
+        
+    }
+    
+    public func loadAlbums() -> AnyPublisher<[Album], Error> {
         guard let url = URL(string: Constant.baseURL.appending(APIPath.feedComingSoon.rawValue)) else {
             fatalError("request not found")
         }
@@ -39,14 +43,15 @@ struct ITunesService: APIService {
     }
 }
 
-struct Feed: Codable {
-    let response : ItunesResponse
+public struct Feed: Codable {
+    public let response : ItunesResponse
+    
     enum CodingKeys: String, CodingKey {
         case response = "feed"
     }
     
-    struct ItunesResponse: Codable {
-        let results: [Album]
+    public struct ItunesResponse: Codable {
+        public let results: [Album]
         
         enum CodingKeys: String, CodingKey {
             case results = "results"
@@ -59,10 +64,20 @@ struct Feed: Codable {
     }
 }
 
-struct Album: Codable, Identifiable {
+public struct Album: Codable, Identifiable {
+    public let id: String
     let artistName: String
     let name: String
     let artworkUrl100: String
-    let id: String
-    
+    public let genres: [Genre]
+    let releaseDate: String
+    let copyright: String
 }
+
+public struct Genre: Codable {
+
+    let genreId: String
+    let name: String
+}
+
+

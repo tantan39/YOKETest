@@ -17,7 +17,9 @@ struct AlbumListView: View {
                     LazyVStack {
                         ForEach (viewModel.albums, id: \.id) { album in
                             NavigationLink (
-                                destination: Text("Destination"),
+                                destination:
+                                    
+                                    AlbumDetailView(album: album),
                                 label: {
                                     AlbumCellView(album: album)
                                 })

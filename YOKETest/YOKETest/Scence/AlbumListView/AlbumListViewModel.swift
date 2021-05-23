@@ -7,17 +7,19 @@
 
 import Combine
 
-class AlbumListViewModel: ObservableObject {
+public class AlbumListViewModel: ObservableObject {
     var service: APIService?
-    @Published var albums: [Album] = []
+     @Published public var albums: [Album] = []
+    @Published public var selectedAlbum: Album?
+    
     private var cancellables = Set<AnyCancellable>()
     
-    init(service: APIService = ITunesService()) {
+    public init(service: APIService = ITunesService()) {
         self.service = service
         self.fetchAlbums()
     }
     
-    func fetchAlbums() {
+    public func fetchAlbums() {
         service?.loadAlbums()
             .sink(receiveCompletion: { _ in },
                   receiveValue: { value in

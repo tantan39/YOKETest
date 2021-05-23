@@ -17,13 +17,22 @@ struct AlbumCellView: View {
                 RemoteImage(url: album.artworkUrl100)
                     .frame(width: 200, height: 200)
                     .aspectRatio(contentMode: .fit)
-                    .padding()
+                    .cornerRadius(10)
+                    .overlay(RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color.clear, lineWidth: 4))
+                    .shadow(color: .secondary, radius: 10)
                 Spacer()
             }
-            
+
             Text(album.name)
+                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                .foregroundColor(.primary)
             Text(album.artistName)
+                .font(.title2)
+                .foregroundColor(.primary)
         }
+        .padding([.top, .bottom], 20)
+        .foregroundColor(.secondary)
         
     }
 }

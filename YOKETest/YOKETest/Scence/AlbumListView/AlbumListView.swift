@@ -11,25 +11,26 @@ struct AlbumListView: View {
     @ObservedObject var viewModel = AlbumListViewModel()
     
     var body: some View {
-        VStack {
-            NavigationView {
-                List (viewModel.albums) { album in
-                    NavigationLink(
-                        destination: Text("Destination")) {
-                        AlbumCellView(album: album)
+        NavigationView {
+            VStack {
+                ScrollView {
+                    LazyVStack {
+                        ForEach (viewModel.albums, id: \.id) { album in
+                            NavigationLink (
+                                destination: Text("Destination"),
+                                label: {
+                                    AlbumCellView(album: album)
+                                })
+                        }
                     }
-                    
                 }
-                .navigationBarTitle ("Albums")
-                .padding()
-                .edgesIgnoringSafeArea(.bottom)
-
+                
+                
             }
-            
+            .navigationBarTitle ("Albums")
+            .edgesIgnoringSafeArea(.bottom)
         }
-        .onAppear(perform: {
-            viewModel.fetchAlbums()
-        })
+        
     }
 }
 

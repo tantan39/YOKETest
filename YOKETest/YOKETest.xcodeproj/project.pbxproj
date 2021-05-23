@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A71A901F2658335500D6BCF0 /* YOKETestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A901E2658335500D6BCF0 /* YOKETestApp.swift */; };
-		A71A90212658335500D6BCF0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A90202658335500D6BCF0 /* ContentView.swift */; };
 		A71A90232658335900D6BCF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A71A90222658335900D6BCF0 /* Assets.xcassets */; };
 		A71A90262658335900D6BCF0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A71A90252658335900D6BCF0 /* Preview Assets.xcassets */; };
 		A71A90312658335900D6BCF0 /* YOKETestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A90302658335900D6BCF0 /* YOKETestTests.swift */; };
@@ -22,6 +21,7 @@
 		A7ADB2A5265AC684004966FD /* RSSSample.json in Resources */ = {isa = PBXBuildFile; fileRef = A7ADB2A4265AC684004966FD /* RSSSample.json */; };
 		A7ADB2B1265ACD5D004966FD /* AlbumDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ADB2B0265ACD5D004966FD /* AlbumDetailView.swift */; };
 		A7ADB2B7265AE33A004966FD /* TextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ADB2B6265AE33A004966FD /* TextManager.swift */; };
+		A7ADB2BC265AE654004966FD /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ADB2BB265AE654004966FD /* Album.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,6 @@
 /* Begin PBXFileReference section */
 		A71A901B2658335500D6BCF0 /* YOKETest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YOKETest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A71A901E2658335500D6BCF0 /* YOKETestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YOKETestApp.swift; sourceTree = "<group>"; };
-		A71A90202658335500D6BCF0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A71A90222658335900D6BCF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A71A90252658335900D6BCF0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A71A90272658335900D6BCF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,6 +62,7 @@
 		A7ADB2A4265AC684004966FD /* RSSSample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RSSSample.json; sourceTree = "<group>"; };
 		A7ADB2B0265ACD5D004966FD /* AlbumDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailView.swift; sourceTree = "<group>"; };
 		A7ADB2B6265AE33A004966FD /* TextManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextManager.swift; sourceTree = "<group>"; };
+		A7ADB2BB265AE654004966FD /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,16 +113,15 @@
 		A71A901D2658335500D6BCF0 /* YOKETest */ = {
 			isa = PBXGroup;
 			children = (
-				A71A901E2658335500D6BCF0 /* YOKETestApp.swift */,
-				A71A906B265890A400D6BCF0 /* Customize */,
-				A71A9057265837B400D6BCF0 /* Constant */,
-				A71A904E2658342F00D6BCF0 /* Model */,
 				A71A904D2658340200D6BCF0 /* APIService */,
-				A71A904C265833E500D6BCF0 /* Scence */,
-				A71A90202658335500D6BCF0 /* ContentView.swift */,
 				A71A90222658335900D6BCF0 /* Assets.xcassets */,
+				A71A906B265890A400D6BCF0 /* Customize */,
 				A71A90272658335900D6BCF0 /* Info.plist */,
+				A71A9057265837B400D6BCF0 /* Manager */,
+				A71A904E2658342F00D6BCF0 /* Model */,
 				A71A90242658335900D6BCF0 /* Preview Content */,
+				A71A904C265833E500D6BCF0 /* Scence */,
+				A71A901E2658335500D6BCF0 /* YOKETestApp.swift */,
 			);
 			path = YOKETest;
 			sourceTree = "<group>";
@@ -175,16 +174,17 @@
 		A71A904E2658342F00D6BCF0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A7ADB2BB265AE654004966FD /* Album.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		A71A9057265837B400D6BCF0 /* Constant */ = {
+		A71A9057265837B400D6BCF0 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
 				A7ADB2B6265AE33A004966FD /* TextManager.swift */,
 			);
-			path = Constant;
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		A71A905B26583B7B00D6BCF0 /* AlbumListView */ = {
@@ -344,7 +344,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A71A905D26583F2600D6BCF0 /* AlbumListViewModel.swift in Sources */,
-				A71A90212658335500D6BCF0 /* ContentView.swift in Sources */,
 				A71A9067265858E700D6BCF0 /* AlbumCellView.swift in Sources */,
 				A71A9050265836DD00D6BCF0 /* ItunesService.swift in Sources */,
 				A71A901F2658335500D6BCF0 /* YOKETestApp.swift in Sources */,
@@ -352,6 +351,7 @@
 				A71A906D265890EA00D6BCF0 /* RemoteImageView.swift in Sources */,
 				A7ADB2B1265ACD5D004966FD /* AlbumDetailView.swift in Sources */,
 				A7ADB2B7265AE33A004966FD /* TextManager.swift in Sources */,
+				A7ADB2BC265AE654004966FD /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
